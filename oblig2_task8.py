@@ -7,14 +7,10 @@ import matplotlib.pyplot as plt
 n = int(input("Input n-value: "))
 p = float(input("Input p-value: "))
 
-
-#print(n)
-#print (p)
-
-x1 = np.arange(0,n,1)
+x1 = np.arange(0,n+1,1)
 y1 = stats.binom.pmf(x1,n,p)
 
-x2 = np.arange(0,n,1)
+x2 = np.arange(0,n+1,1)
 y2 = stats.binom.cdf(x2,n,p)
 
 plt.plot(x1,y1, label="P(X)=x")
